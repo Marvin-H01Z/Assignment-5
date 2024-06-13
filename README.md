@@ -130,23 +130,25 @@ Test the application
 1. Open and test the application program (index.php) provided in part4 folder.
 2. Test this application by using the Add Task button to enter three tasks and the Delete
 Task button to delete one of the tasks. The other buttons shouldn’t do anything.
-3. In the tasklist.php file, just inside the <main> tag, add the following code: <p><?php
-print_r($task_list); ?></p>
-4. Save your changes and run the application. You should see the indexes and values for the
-$task_list array in the browser.
+3. In the tasklist.php file, just inside the `<main>`tag, add the following code:
+   `<p><?php print_r($task_list); ?></p>`
+5. Save your changes and run the application. You should see the indexes and values for the
+`$task_list` array in the browser.
+
 Modify and enhance the application
-5. Modify the code for adding a task so it uses the array_push() function to add a new
-task to the end of the $task_list array. Then, test this change.
-6. Add code that lets the user modify an existing task. If the user clicks on the Modify Task
+
+7. Modify the code for adding a task so it uses the `array_push()` function to add a new
+task to the end of the `$task_list` array. Then, test this change.
+8. Add code that lets the user modify an existing task. If the user clicks on the Modify Task
 button, this code should hide the form that contains the Modify Task button, and it should
 display the form that’s included in the tasklist.php file. This form displays the current
 task in a text box and includes buttons that lets users save or cancel their changes.
-7. Add code that allows the user to promote a task. This code should move the selected task
+9. Add code that allows the user to promote a task. This code should move the selected task
 up one index in the array of tasks. If the user selects the first task, this code should
 display an error that indicates that you can’t promote the first task.
-8. Add code that lets the user sort all tasks alphabetically. In addition, modify the code so
+10. Add code that lets the user sort all tasks alphabetically. In addition, modify the code so
 the Sort button is displayed only if the task list contains two or more tasks.
-9. Don’t forget to test your changes to make sure that they work correctly!
+11. Don’t forget to test your changes to make sure that they work correctly!
 Test your code by executing it and ensure that the expected output is displayed.
 10.Upload your PHP files in your respective folder :Assignment5_Part5
 
