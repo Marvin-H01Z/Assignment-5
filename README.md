@@ -19,9 +19,9 @@ b. If any words starting with "PHP" are found, display them as an unordered list
 c. If no words starting with "PHP" are found, display an informational message
 indicating so.
 
-5. To complete the code, locate the comments // Extract all words starting with 'PHP'
-and // Your code here in the PHP section.
-6. Inside the // Your code here section, write the necessary PHP code using PCRE to
+5. To complete the code, locate the comments `//` Extract all words starting with 'PHP'
+and `//` Your code here in the PHP section.
+6. Inside the `//` Your code here section, write the necessary PHP code using PCRE to
 extract the words starting with "PHP" from the input string and store them in an array.
 7. If any words are found, iterate over the array and display each word as a list item.
 8. If no words are found, display the appropriate informational message.
@@ -30,9 +30,9 @@ displayed.
 9. Upload your PHP files in your respective folder :Assignment5_Part1
 
 # Hints:
-• The PHP function preg_match_all() can be used to perform a global regular
+• The PHP function `preg_match_all()` can be used to perform a global regular
 expression match and extract all occurrences into an array.
-• Use the regular expression pattern /\b(PHP\w+)\b/i to match words starting with
+• Use the regular expression pattern `/\b(PHP\w+)\b/i `to match words starting with
 "PHP" (case-insensitive).
 • Use the PHP variable $matches to store the matches found by preg_match_all().
 • Remember to properly escape and sanitize the user input before displaying it to prevent
@@ -79,14 +79,14 @@ complete the functionality.
 4. Your task is to complete the missing code segments to create an object of the User class
 to store the user details. The User class should have the following properties and
 methods:
-5. The User class should have the following properties and methods:
-• Properties: name (string), age (integer)
+5. The `User` class should have the following properties and methods:
+• Properties: `name (string)`, `age (integer)`
 • Constructor: Accepts name and age as parameters and sets the values of the
 properties.
-• Methods: getName() and getAge() to retrieve the values of the properties.
+• Methods: `getName()` and `getAge()` to retrieve the values of the properties.
 6. After the form is submitted, create an instance of the User class with the provided name
 and age.
-7. Display the user details below the form using the getName() and getAge()
+7. Display the user details below the form using the `getName()` and `getAge()`
 methods.
 8. Upload your PHP files in your respective folder :Assignment5_Part3
 
@@ -108,8 +108,8 @@ complete the functionality.
 4. Your task is to complete the missing code segments to implement a custom error handler
 function and a custom exception class.
 a. The custom error handler function should output the user provided error message.
-b. The custom exception class should extend the base Exception class and
-override the __toString() method to provide a formatted exception message.
+b. The custom exception class should extend the base `Exception` class and
+override the `__toString()` method to provide a formatted exception message.
 c. After the form is submitted, trigger a custom error using the provided custom
 error message.
 d. Throw a custom exception using the provided custom exception message and
