@@ -24,11 +24,19 @@
             //Input your PHP code here
             //
 
-            if (!empty($matches[1])) {
+            $pattern = '/\bPHP\w*\b/';
+
+            preg_match_all($pattern, $inputString, $matches);
+            //var_dump($matches);
+
+            if (!empty($matches[0])) {
                 
                 //
                 //Input your PHP code here
                 //
+                
+                print_r($matches[0]);
+
             } else {
                 echo '<div class="alert alert-info mt-3">No words starting with "PHP" found.</div>';
             }

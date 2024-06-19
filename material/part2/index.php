@@ -7,7 +7,7 @@
 <body>
   <div class="container mt-5">
     <h3>String Manipulation</h3>
-    <form action="part2.php" method="POST">
+    <form action="" method="POST">
       <div class="form-group">
         <label for="inputString">Enter a String:</label>
         <input type="text" class="form-control" id="inputString" name="inputString" value="<?php echo isset($_POST['inputString']) ? $_POST['inputString'] : ''; ?>" required>
@@ -19,6 +19,21 @@
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $inputString = $_POST["inputString"];
         
+        //Länge des Strings
+        $stringLen = strlen($inputString);
+        echo $stringLen."<br>";
+
+        //Alles upper case
+        $stringUp = strtoupper($inputString);
+        echo $stringUp."<br>";
+
+        //Alles lower case
+        $stringLow = strtolower($inputString);
+        echo $stringLow."<br>";
+        
+        echo '<p style="color: red;">Yeeeeeeeeeeeeeeetttttt</p>';
+
+
         // Perform string manipulation operations
         //
         //Input your PHP code here
